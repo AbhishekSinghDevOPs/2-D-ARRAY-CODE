@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int P[3][3],Q[3][3],R[3][3],i,j;
+	printf("enter 9 values in 1ST matrix");
+	for(i=0;i<=2;i++)
+	 for(j=0;j<=2;j++)
+	  scanf("%d",&P[i][j]); //1st matrix
+	  
+	  printf("enter 9 values in 2ND matrix");
+	for(i=0;i<=2;i++)
+	 for(j=0;j<=2;j++)
+	  scanf("%d",&Q[i][j]); //2nd matrix
+	  
+
+	  
+	for(i=0;i<=2;i++)
+	 for(j=0;j<=2;j++)
+	  R[i][j]=P[i][j] + Q[i][j];
+	  printf("%d",R[i][j]);
+	  printf("\n");
+	  
+	  
+	  return 0;
+}
